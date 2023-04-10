@@ -5,7 +5,17 @@ puts "Какая у вас на руках валюта?
 choice = gets.chomp
 
 if choice == "1"
-    abort "Отлично"
+    puts "Сколько сейчас стоит 1 доллар?"
+
+    dollar = gets.to_f
+
+    puts "Сколько у вас рублей?"
+
+    sum = gets.to_f
+
+    reserves = (sum / dollar).round(2)
+
+    puts "Ваши запасы на сегодня равны: " + reserves.to_s + " $"
 else
     puts "Сколько сейчас стоит 1 доллар?"
 
